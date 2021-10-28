@@ -1,0 +1,14 @@
+PREFIX ns: <http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?Caissier ?nom  ?prenom ?age ?genre ?experience
+WHERE{
+	?Caissier rdf:type ns:Caissier;
+	ns:nom ?nom;
+	ns:prenom ?prenom;
+	ns:age ?age;
+	ns:genre ?genre;
+	ns:experience ?experience;
+}
+
+

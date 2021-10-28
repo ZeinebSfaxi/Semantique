@@ -1,0 +1,12 @@
+PREFIX ns: <http://www.owl-ontologies.com/Ferme.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?Employee ?Nom ?CIN ?Age
+WHERE{
+	?Employee rdf:type ns:Employee;
+	ns:nom ?Nom;
+	ns:cin ?CIN;
+	ns:age ?Age	.
+}
+
+

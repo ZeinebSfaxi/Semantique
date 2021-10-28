@@ -1,0 +1,10 @@
+PREFIX ns: <http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?Capillaire ?marque ?prix
+WHERE{
+	?Capillaire rdf:type ns:Capillaire;
+	ns:marque ?marque;
+	ns:prix ?prix;
+}
+

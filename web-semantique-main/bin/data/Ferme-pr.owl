@@ -1,0 +1,797 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/moham/ontologies/2021/9/untitled-ontology-12"
+     xml:base="http://www.semanticweb.org/moham/ontologies/2021/9/untitled-ontology-12"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Ferme="http://www.owl-ontologies.com/Ferme.owl#">
+    <owl:Ontology rdf:about="http://www.owl-ontologies.com/Ferme.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#cultiverLesBiens -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ferme.owl#cultiverLesBiens">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Cultivateur"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Produit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#donneLesBenefices -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ferme.owl#donneLesBenefices">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Vendeur_des_biens"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Proprietaire"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#egorge -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ferme.owl#egorge">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Boucher"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Animale"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#maintenirLaFerme -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ferme.owl#maintenirLaFerme">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ferme.owl#AgentDeMaintenance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#payeLesEmployer -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ferme.owl#payeLesEmployer">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Proprietaire"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Employee"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#ponte -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ferme.owl#ponte">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Poule"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Oeuf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#produire_du -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ferme.owl#produire_du">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Chevre"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Vache"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Lait"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#traiteLesBetails -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ferme.owl#traiteLesBetails">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Traiteur_de_betails"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Animale"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#veille -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ferme.owl#veille">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Gardien"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Animale"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#vendLesBiens -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ferme.owl#vendLesBiens">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Vendeur_des_biens"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Produit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ferme.owl#age">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#age_Animeaux -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ferme.owl#age_Animeaux">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Animale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#cin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ferme.owl#cin">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#nom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ferme.owl#nom">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#poids -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ferme.owl#poids">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Animale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#prix -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ferme.owl#prix">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Animale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#prixx_kg_l -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ferme.owl#prixx_kg_l">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Produit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#valeurs_nutritionelles -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ferme.owl#valeurs_nutritionelles">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Produit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#AgentDeMaintenance -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ferme.owl#AgentDeMaintenance">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#Animale -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ferme.owl#Animale"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#Boucher -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ferme.owl#Boucher">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#Chevre -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ferme.owl#Chevre">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Animale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#Cultivateur -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ferme.owl#Cultivateur">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#Employee -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ferme.owl#Employee">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#Fruits -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ferme.owl#Fruits">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Produit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#Gardien -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ferme.owl#Gardien">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#Lait -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ferme.owl#Lait">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Produit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#Legumes -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ferme.owl#Legumes">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Produit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#Mouton -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ferme.owl#Mouton">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Animale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#Oeuf -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ferme.owl#Oeuf">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Produit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#Personne -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ferme.owl#Personne"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#Poule -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ferme.owl#Poule">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Animale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#Produit -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ferme.owl#Produit"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#Proprietaire -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ferme.owl#Proprietaire">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#Traiteur_de_betails -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ferme.owl#Traiteur_de_betails">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#Vache -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ferme.owl#Vache">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Animale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#Vendeur_des_biens -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ferme.owl#Vendeur_des_biens">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#abdallah -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#abdallah">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#AgentDeMaintenance"/>
+        <Ferme:maintenirLaFerme rdf:resource="http://www.owl-ontologies.com/Ferme.owl#abdallah"/>
+        <Ferme:age rdf:datatype="http://www.w3.org/2001/XMLSchema#string">63</Ferme:age>
+        <Ferme:cin>00009844</Ferme:cin>
+        <Ferme:nom>abdallah</Ferme:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#ali -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#ali">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Employee"/>
+        <Ferme:age rdf:datatype="http://www.w3.org/2001/XMLSchema#string">56</Ferme:age>
+        <Ferme:cin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">81989885</Ferme:cin>
+        <Ferme:nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ali</Ferme:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#amor -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#amor">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Vendeur_des_biens"/>
+        <Ferme:donneLesBenefices rdf:resource="http://www.owl-ontologies.com/Ferme.owl#hammadi"/>
+        <Ferme:vendLesBiens rdf:resource="http://www.owl-ontologies.com/Ferme.owl#banane"/>
+        <Ferme:vendLesBiens rdf:resource="http://www.owl-ontologies.com/Ferme.owl#laits"/>
+        <Ferme:vendLesBiens rdf:resource="http://www.owl-ontologies.com/Ferme.owl#orange"/>
+        <Ferme:vendLesBiens rdf:resource="http://www.owl-ontologies.com/Ferme.owl#pomme"/>
+        <Ferme:vendLesBiens rdf:resource="http://www.owl-ontologies.com/Ferme.owl#pomme_de_terre"/>
+        <Ferme:vendLesBiens rdf:resource="http://www.owl-ontologies.com/Ferme.owl#tomate"/>
+        <Ferme:age rdf:datatype="http://www.w3.org/2001/XMLSchema#string">29</Ferme:age>
+        <Ferme:cin>11624788</Ferme:cin>
+        <Ferme:nom>amor</Ferme:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#aziz -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#aziz">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Employee"/>
+        <Ferme:age rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24</Ferme:age>
+        <Ferme:cin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">49846517</Ferme:cin>
+        <Ferme:nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aziz</Ferme:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#banane -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#banane">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Fruits"/>
+        <Ferme:prixx_kg_l rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7.2</Ferme:prixx_kg_l>
+        <Ferme:valeurs_nutritionelles rdf:datatype="http://www.w3.org/2001/XMLSchema#string">89</Ferme:valeurs_nutritionelles>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#chevre1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#chevre1">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Chevre"/>
+        <Ferme:age_Animeaux rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24</Ferme:age_Animeaux>
+        <Ferme:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#string">28</Ferme:poids>
+        <Ferme:prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">390</Ferme:prix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#chevre2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#chevre2">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Chevre"/>
+        <Ferme:age_Animeaux rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30</Ferme:age_Animeaux>
+        <Ferme:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23</Ferme:poids>
+        <Ferme:prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">300</Ferme:prix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#chevre3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#chevre3">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Chevre"/>
+        <Ferme:age_Animeaux rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19</Ferme:age_Animeaux>
+        <Ferme:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32</Ferme:poids>
+        <Ferme:prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">430</Ferme:prix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#chevre4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#chevre4">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Chevre"/>
+        <Ferme:age_Animeaux rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22</Ferme:age_Animeaux>
+        <Ferme:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24</Ferme:poids>
+        <Ferme:prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">260</Ferme:prix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#fathi -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#fathi">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Gardien"/>
+        <Ferme:veille rdf:resource="http://www.owl-ontologies.com/Ferme.owl#mouton1"/>
+        <Ferme:veille rdf:resource="http://www.owl-ontologies.com/Ferme.owl#mouton2"/>
+        <Ferme:veille rdf:resource="http://www.owl-ontologies.com/Ferme.owl#mouton3"/>
+        <Ferme:veille rdf:resource="http://www.owl-ontologies.com/Ferme.owl#mouton4"/>
+        <Ferme:veille rdf:resource="http://www.owl-ontologies.com/Ferme.owl#poule1"/>
+        <Ferme:veille rdf:resource="http://www.owl-ontologies.com/Ferme.owl#poule2"/>
+        <Ferme:veille rdf:resource="http://www.owl-ontologies.com/Ferme.owl#poule3"/>
+        <Ferme:veille rdf:resource="http://www.owl-ontologies.com/Ferme.owl#poule4"/>
+        <Ferme:veille rdf:resource="http://www.owl-ontologies.com/Ferme.owl#vache1"/>
+        <Ferme:veille rdf:resource="http://www.owl-ontologies.com/Ferme.owl#vache2"/>
+        <Ferme:veille rdf:resource="http://www.owl-ontologies.com/Ferme.owl#vache3"/>
+        <Ferme:veille rdf:resource="http://www.owl-ontologies.com/Ferme.owl#vache4"/>
+        <Ferme:age rdf:datatype="http://www.w3.org/2001/XMLSchema#string">45</Ferme:age>
+        <Ferme:cin>65149444</Ferme:cin>
+        <Ferme:nom>fathi</Ferme:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#fawzia -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#fawzia">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Traiteur_de_betails"/>
+        <Ferme:traiteLesBetails rdf:resource="http://www.owl-ontologies.com/Ferme.owl#chevre1"/>
+        <Ferme:traiteLesBetails rdf:resource="http://www.owl-ontologies.com/Ferme.owl#chevre2"/>
+        <Ferme:traiteLesBetails rdf:resource="http://www.owl-ontologies.com/Ferme.owl#chevre3"/>
+        <Ferme:traiteLesBetails rdf:resource="http://www.owl-ontologies.com/Ferme.owl#chevre4"/>
+        <Ferme:traiteLesBetails rdf:resource="http://www.owl-ontologies.com/Ferme.owl#vache1"/>
+        <Ferme:traiteLesBetails rdf:resource="http://www.owl-ontologies.com/Ferme.owl#vache2"/>
+        <Ferme:traiteLesBetails rdf:resource="http://www.owl-ontologies.com/Ferme.owl#vache3"/>
+        <Ferme:traiteLesBetails rdf:resource="http://www.owl-ontologies.com/Ferme.owl#vache4"/>
+        <Ferme:age rdf:datatype="http://www.w3.org/2001/XMLSchema#string">58</Ferme:age>
+        <Ferme:cin>03547889</Ferme:cin>
+        <Ferme:nom>fawzia</Ferme:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#ferida -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#ferida">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Employee"/>
+        <Ferme:age rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17</Ferme:age>
+        <Ferme:cin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">48849849</Ferme:cin>
+        <Ferme:nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ferida</Ferme:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#hammadi -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#hammadi">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Proprietaire"/>
+        <Ferme:payeLesEmployer rdf:resource="http://www.owl-ontologies.com/Ferme.owl#abdallah"/>
+        <Ferme:payeLesEmployer rdf:resource="http://www.owl-ontologies.com/Ferme.owl#amor"/>
+        <Ferme:payeLesEmployer rdf:resource="http://www.owl-ontologies.com/Ferme.owl#fathi"/>
+        <Ferme:payeLesEmployer rdf:resource="http://www.owl-ontologies.com/Ferme.owl#fawzia"/>
+        <Ferme:payeLesEmployer rdf:resource="http://www.owl-ontologies.com/Ferme.owl#mounir"/>
+        <Ferme:payeLesEmployer rdf:resource="http://www.owl-ontologies.com/Ferme.owl#radhwen"/>
+        <Ferme:age rdf:datatype="http://www.w3.org/2001/XMLSchema#string">68</Ferme:age>
+        <Ferme:cin>00057558</Ferme:cin>
+        <Ferme:nom>hammadi</Ferme:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#helmi -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#helmi">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Employee"/>
+        <Ferme:age rdf:datatype="http://www.w3.org/2001/XMLSchema#string">42</Ferme:age>
+        <Ferme:cin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">98498515</Ferme:cin>
+        <Ferme:nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">helmi</Ferme:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#laits -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#laits">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Lait"/>
+        <Ferme:prixx_kg_l rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.6</Ferme:prixx_kg_l>
+        <Ferme:valeurs_nutritionelles rdf:datatype="http://www.w3.org/2001/XMLSchema#string">103</Ferme:valeurs_nutritionelles>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#mahdouba -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#mahdouba">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Employee"/>
+        <Ferme:age rdf:datatype="http://www.w3.org/2001/XMLSchema#string">49</Ferme:age>
+        <Ferme:cin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">84694984</Ferme:cin>
+        <Ferme:nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mahbouba</Ferme:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#mounir -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#mounir">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Boucher"/>
+        <Ferme:egorge rdf:resource="http://www.owl-ontologies.com/Ferme.owl#mouton1"/>
+        <Ferme:egorge rdf:resource="http://www.owl-ontologies.com/Ferme.owl#mouton2"/>
+        <Ferme:egorge rdf:resource="http://www.owl-ontologies.com/Ferme.owl#mouton3"/>
+        <Ferme:egorge rdf:resource="http://www.owl-ontologies.com/Ferme.owl#mouton4"/>
+        <Ferme:egorge rdf:resource="http://www.owl-ontologies.com/Ferme.owl#poule1"/>
+        <Ferme:egorge rdf:resource="http://www.owl-ontologies.com/Ferme.owl#poule2"/>
+        <Ferme:egorge rdf:resource="http://www.owl-ontologies.com/Ferme.owl#poule3"/>
+        <Ferme:egorge rdf:resource="http://www.owl-ontologies.com/Ferme.owl#poule4"/>
+        <Ferme:egorge rdf:resource="http://www.owl-ontologies.com/Ferme.owl#vache1"/>
+        <Ferme:egorge rdf:resource="http://www.owl-ontologies.com/Ferme.owl#vache2"/>
+        <Ferme:egorge rdf:resource="http://www.owl-ontologies.com/Ferme.owl#vache3"/>
+        <Ferme:egorge rdf:resource="http://www.owl-ontologies.com/Ferme.owl#vache4"/>
+        <Ferme:age rdf:datatype="http://www.w3.org/2001/XMLSchema#string">53</Ferme:age>
+        <Ferme:cin>02144786</Ferme:cin>
+        <Ferme:nom>mounir</Ferme:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#mouton1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#mouton1">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Mouton"/>
+        <Ferme:age_Animeaux rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8</Ferme:age_Animeaux>
+        <Ferme:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#string">49</Ferme:poids>
+        <Ferme:prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">750</Ferme:prix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#mouton2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#mouton2">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Mouton"/>
+        <Ferme:age_Animeaux rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32</Ferme:age_Animeaux>
+        <Ferme:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#string">37</Ferme:poids>
+        <Ferme:prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">610</Ferme:prix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#mouton3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#mouton3">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Mouton"/>
+        <Ferme:age_Animeaux rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12</Ferme:age_Animeaux>
+        <Ferme:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#string">53</Ferme:poids>
+        <Ferme:prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">860</Ferme:prix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#mouton4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#mouton4">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Mouton"/>
+        <Ferme:age rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16</Ferme:age>
+        <Ferme:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#string">56</Ferme:poids>
+        <Ferme:prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">760</Ferme:prix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#oeufs -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#oeufs">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Oeuf"/>
+        <Ferme:prixx_kg_l rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12</Ferme:prixx_kg_l>
+        <Ferme:valeurs_nutritionelles rdf:datatype="http://www.w3.org/2001/XMLSchema#string">90</Ferme:valeurs_nutritionelles>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#orange -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#orange">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Fruits"/>
+        <Ferme:prixx_kg_l rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17</Ferme:prixx_kg_l>
+        <Ferme:valeurs_nutritionelles rdf:datatype="http://www.w3.org/2001/XMLSchema#string">47</Ferme:valeurs_nutritionelles>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#pomme -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#pomme">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Fruits"/>
+        <Ferme:prixx_kg_l rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13</Ferme:prixx_kg_l>
+        <Ferme:valeurs_nutritionelles rdf:datatype="http://www.w3.org/2001/XMLSchema#string">52</Ferme:valeurs_nutritionelles>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#pomme_de_terre -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#pomme_de_terre">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Legumes"/>
+        <Ferme:prixx_kg_l rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15</Ferme:prixx_kg_l>
+        <Ferme:valeurs_nutritionelles rdf:datatype="http://www.w3.org/2001/XMLSchema#string">77</Ferme:valeurs_nutritionelles>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#poule1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#poule1">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Poule"/>
+        <Ferme:age_Animeaux rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</Ferme:age_Animeaux>
+        <Ferme:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</Ferme:poids>
+        <Ferme:prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16</Ferme:prix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#poule2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#poule2">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Poule"/>
+        <Ferme:age_Animeaux rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</Ferme:age_Animeaux>
+        <Ferme:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.5</Ferme:poids>
+        <Ferme:prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14</Ferme:prix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#poule3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#poule3">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Poule"/>
+        <Ferme:age_Animeaux rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</Ferme:age_Animeaux>
+        <Ferme:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.2</Ferme:poids>
+        <Ferme:prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18</Ferme:prix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#poule4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#poule4">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Poule"/>
+        <Ferme:age_Animeaux rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</Ferme:age_Animeaux>
+        <Ferme:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.1</Ferme:poids>
+        <Ferme:prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22</Ferme:prix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#radhwen -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#radhwen">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Cultivateur"/>
+        <Ferme:cultiverLesBiens rdf:resource="http://www.owl-ontologies.com/Ferme.owl#banane"/>
+        <Ferme:cultiverLesBiens rdf:resource="http://www.owl-ontologies.com/Ferme.owl#orange"/>
+        <Ferme:cultiverLesBiens rdf:resource="http://www.owl-ontologies.com/Ferme.owl#pomme"/>
+        <Ferme:cultiverLesBiens rdf:resource="http://www.owl-ontologies.com/Ferme.owl#pomme_de_terre"/>
+        <Ferme:cultiverLesBiens rdf:resource="http://www.owl-ontologies.com/Ferme.owl#tomate"/>
+        <Ferme:age rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30</Ferme:age>
+        <Ferme:cin>11652287</Ferme:cin>
+        <Ferme:nom>radhwen</Ferme:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#tomate -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#tomate">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Legumes"/>
+        <Ferme:prixx_kg_l rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11</Ferme:prixx_kg_l>
+        <Ferme:valeurs_nutritionelles rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18</Ferme:valeurs_nutritionelles>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#vache1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#vache1">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Vache"/>
+        <Ferme:age_Animeaux rdf:datatype="http://www.w3.org/2001/XMLSchema#string">38</Ferme:age_Animeaux>
+        <Ferme:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#string">820</Ferme:poids>
+        <Ferme:prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7800</Ferme:prix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#vache2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#vache2">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Vache"/>
+        <Ferme:age_Animeaux rdf:datatype="http://www.w3.org/2001/XMLSchema#string">40</Ferme:age_Animeaux>
+        <Ferme:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#string">760</Ferme:poids>
+        <Ferme:prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6900</Ferme:prix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#vache3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#vache3">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Vache"/>
+        <Ferme:age_Animeaux rdf:datatype="http://www.w3.org/2001/XMLSchema#string">46</Ferme:age_Animeaux>
+        <Ferme:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#string">830</Ferme:poids>
+        <Ferme:prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7200</Ferme:prix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ferme.owl#vache4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ferme.owl#vache4">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ferme.owl#Vache"/>
+        <Ferme:age_Animeaux rdf:datatype="http://www.w3.org/2001/XMLSchema#string">48</Ferme:age_Animeaux>
+        <Ferme:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#string">815</Ferme:poids>
+        <Ferme:prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8200</Ferme:prix>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

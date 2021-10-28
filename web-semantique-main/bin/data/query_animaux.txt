@@ -1,0 +1,10 @@
+PREFIX ns: <http://www.owl-ontologies.com/Ferme.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?animal ?age_animaux_mois ?prix_dt ?poids_kg
+WHERE{
+	?animal rdf:type ns:Animale;
+	ns:age_Animeaux ?age_animaux_mois;
+	ns:prix ?prix_dt;
+	ns:poids ?poids_kg	.
+}

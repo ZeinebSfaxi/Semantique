@@ -1,0 +1,549 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#"
+     xml:base="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-15="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#achete -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#achete">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Client"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Produit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#aide -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#aide">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Employe"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Client"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#emploie -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#emploie">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Manager"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Caissier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#ordonne -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#ordonne">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Manager"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Produit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#paye -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#paye">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Client"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Manager"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#reclame -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#reclame">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Client"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Manager"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#teste -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#teste">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Client"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Maquillage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Parfum"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#vends -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#vends">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Employe"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Produit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#experience -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#experience">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Employe"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#genre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#genre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#marque -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#marque">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Produit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#nom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#nom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#prenom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#prenom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#prix -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#prix">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Produit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Maquillage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Caissier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Caissier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Employe"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Manager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Capillaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Capillaire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Soin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Client -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Client">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Corps -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Corps">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#SkinCare"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Employe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Employe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Manager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Manager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Employe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Maquillage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Maquillage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Soin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Parfum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Parfum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Produit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Personne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Personne"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Produit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Produit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#SkinCare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#SkinCare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Soin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Soin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Soin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Produit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Visage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Visage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#SkinCare"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Body_Lotion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Body_Lotion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Corps"/>
+        <marque rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avene</marque>
+        <prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">70,350 DT</prix>
+    </owl:NamedIndividual>
+
+
+        <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Body_Milk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Body_Milk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Corps"/>
+        <marque rdf:datatype="http://www.w3.org/2001/XMLSchema#string">YvesRocher</marque>
+        <prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10,350 DT</prix>
+    </owl:NamedIndividual>
+
+    
+        <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Huile_Essentiel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Huile_Essentiel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Corps"/>
+        <marque rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REVIVE</marque>
+        <prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25,350 DT</prix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Creme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Creme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Visage"/>
+        <marque rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lancome</marque>
+        <prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">55,69 DT</prix>
+    </owl:NamedIndividual>
+
+        <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Pommade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Pommade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Visage"/>
+        <marque rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clarins</marque>
+        <prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">65,69 DT</prix>
+    </owl:NamedIndividual>
+
+            <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Lait -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Lait">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Visage"/>
+        <marque rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maybelline</marque>
+        <prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">38 DT</prix>
+    </owl:NamedIndividual>    
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Rouge_A_Levres -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Rouge_A_Levres">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Maquillage"/>
+        <marque rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dior</marque>
+        <prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">150,200 DT</prix>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liquide</type>
+    </owl:NamedIndividual>
+
+        <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Eyeliner -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Eyeliner">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Maquillage"/>
+        <marque rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guerlin</marque>
+        <prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">90,200 DT</prix>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crayon</type>
+    </owl:NamedIndividual>
+
+            <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Eye_Shadow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Eye_Shadow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Maquillage"/>
+        <marque rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Loreal</marque>
+        <prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">70 DT</prix>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Poudre</type>
+    </owl:NamedIndividual>
+
+                <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Fond_De_Teint -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Fond_De_Teint">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Maquillage"/>
+        <marque rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chanel</marque>
+        <prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">90 DT</prix>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Compact</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Faycel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Faycel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Manager"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#string">52 ans</age>
+        <experience rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 ans</experience>
+        <genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</genre>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fasoulya</nom>
+        <prenom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Faycel</prenom>
+    </owl:NamedIndividual>
+
+        <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Latifa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Latifa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Manager"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22 ans</age>
+        <experience rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8 ans</experience>
+        <genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</genre>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salah</nom>
+        <prenom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latifa</prenom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#LINTEDIT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#LINTEDIT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Parfum"/>
+        <marque rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Givenchy</marque>
+        <prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">350 DT</prix>
+    </owl:NamedIndividual>
+
+        <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#MissDior -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#MissDior">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Parfum"/>
+        <marque rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chanel</marque>
+        <prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">500 DT</prix>
+    </owl:NamedIndividual>
+
+            <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Invictus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Invictus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Parfum"/>
+        <marque rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PacoRabanne</marque>
+        <prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">250 DT</prix>
+    </owl:NamedIndividual>
+
+             <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Idole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Idole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Parfum"/>
+        <marque rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lancome</marque>
+        <prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">400 DT</prix>
+    </owl:NamedIndividual>    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Mohsen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Mohsen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Client"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#string">43 ans</age>
+        <genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</genre>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ben Mohsen</nom>
+        <prenom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mohsen</prenom>
+    </owl:NamedIndividual>
+
+        <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Gaddour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Gaddour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Client"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#string">33 ans</age>
+        <genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</genre>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jerbi</nom>
+        <prenom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gaddour</prenom>
+    </owl:NamedIndividual>
+
+            <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Fadwa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Fadwa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Client"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#string">28 ans</age>
+        <genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</genre>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mohsni</nom>
+        <prenom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fadwa</prenom>
+    </owl:NamedIndividual>
+
+                <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Karima -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Karima">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Client"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#string">80 ans</age>
+        <genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</genre>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paulina</nom>
+        <prenom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Karima</prenom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Serum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Serum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Capillaire"/>
+        <marque rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phyteal</marque>
+        <prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">75,500 DT</prix>
+    </owl:NamedIndividual>
+
+        <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Shampoing  -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Shampoing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Capillaire"/>
+        <marque rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Russian_Amber_Imperial</marque>
+        <prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">90,500 DT</prix>
+    </owl:NamedIndividual>
+
+            <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Huile  -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Huile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Capillaire"/>
+        <marque rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monoi</marque>
+        <prix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">80,500 DT</prix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Souad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Souad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Caissier"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32 ans</age>
+        <experience rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4 ans</experience>
+        <genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</genre>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kalleb</nom>
+        <prenom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Souad</prenom>
+    </owl:NamedIndividual>
+
+        <!-- http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Amal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Amal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeineb/ontologies/2021/9/untitled-ontology-15#Caissier"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32 ans</age>
+        <experience rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5 ans</experience>
+        <genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</genre>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KhaliAndek</nom>
+        <prenom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amal</prenom>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
