@@ -69,12 +69,12 @@ public class RestApi {
 	
 	@GetMapping("/caissiers")
 	@CrossOrigin(origins = "http://localhost:3000")
-	public String afficheCaissier() {
+	public String afficheCaissier() throws IOException {
 		String NS = "";
 		// lire le model a partir d'une ontologie
 		if (model != null) {
 			// lire le Namespace de l�ontologie
-			NS = model.getNsPrefixURI("");
+			/*NS = model.getNsPrefixURI("");
 
 			// apply our rules on the owlInferencedModel
 			Model inferedModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
@@ -82,7 +82,26 @@ public class RestApi {
 			// query on the model after inference
 			String res =  JenaEngine.executeQueryFile(inferedModel, "data/query_caissier.txt");
 			System.out.println(res);
-			return res;
+			return res;*/
+			
+			String queryString = new String(Files.readAllBytes(Paths.get("data/query_caissier.txt")));
+	        
+	        Query query = QueryFactory.create(queryString) ;
+	        Model inferedModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
+	        QueryExecution qexec = QueryExecutionFactory.create(query, inferedModel) ;
+	        
+	            ResultSet results = qexec.execSelect() ;
+	            ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+
+	            ResultSetFormatter.outputAsJSON(outputStream, results);
+
+	            // and turn that into a String
+	            String json = new String(outputStream.toByteArray());
+
+	            System.out.println(json);
+	            return json;
+			
+			
 			
 
 		} else {
@@ -93,12 +112,12 @@ public class RestApi {
 	
 	@GetMapping("/managers")
 	@CrossOrigin(origins = "http://localhost:3000")
-	public String afficheManagers() {
+	public String afficheManagers() throws IOException {
 		String NS = "";
 		// lire le model a partir d'une ontologie
 		if (model != null) {
 			// lire le Namespace de l�ontologie
-			NS = model.getNsPrefixURI("");
+			/*NS = model.getNsPrefixURI("");
 
 			// apply our rules on the owlInferencedModel
 			Model inferedModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
@@ -106,7 +125,25 @@ public class RestApi {
 			// query on the model after inference
 			String res =  JenaEngine.executeQueryFile(inferedModel, "data/query_manager.txt");
 			System.out.println(res);
-			return res;
+			return res;*/
+			
+			
+			String queryString = new String(Files.readAllBytes(Paths.get("data/query_manager.txt")));
+	        
+	        Query query = QueryFactory.create(queryString) ;
+	        Model inferedModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
+	        QueryExecution qexec = QueryExecutionFactory.create(query, inferedModel) ;
+	        
+	            ResultSet results = qexec.execSelect() ;
+	            ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+
+	            ResultSetFormatter.outputAsJSON(outputStream, results);
+
+	            // and turn that into a String
+	            String json = new String(outputStream.toByteArray());
+
+	            System.out.println(json);
+	            return json;
 			
 
 		} else {
@@ -116,12 +153,12 @@ public class RestApi {
 	
 	@GetMapping("/clients")
 	@CrossOrigin(origins = "http://localhost:3000")
-	public String afficherClients() {
+	public String afficherClients() throws IOException {
 		String NS = "";
 		// lire le model a partir d'une ontologie
 		if (model != null) {
 			// lire le Namespace de l�ontologie
-			NS = model.getNsPrefixURI("");
+			/*NS = model.getNsPrefixURI("");
 
 			// apply our rules on the owlInferencedModel
 			Model inferedModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
@@ -129,7 +166,25 @@ public class RestApi {
 			// query on the model after inference
 			String res =  JenaEngine.executeQueryFile(inferedModel, "data/query_client.txt");
 			System.out.println(res);
-			return res;
+			return res;*/
+			
+			String queryString = new String(Files.readAllBytes(Paths.get("data/query_client.txt")));
+	        
+	        Query query = QueryFactory.create(queryString) ;
+	        Model inferedModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
+	        QueryExecution qexec = QueryExecutionFactory.create(query, inferedModel) ;
+	        
+	            ResultSet results = qexec.execSelect() ;
+	            ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+
+	            ResultSetFormatter.outputAsJSON(outputStream, results);
+
+	            // and turn that into a String
+	            String json = new String(outputStream.toByteArray());
+
+	            System.out.println(json);
+	            return json;
+			
 			
 
 		} else {
@@ -139,12 +194,12 @@ public class RestApi {
 	
 	@GetMapping("/produits")
 	@CrossOrigin(origins = "http://localhost:3000")
-	public String afficherProd() {
+	public String afficherProd() throws IOException {
 		String NS = "";
 		// lire le model a partir d'une ontologie
 		if (model != null) {
 			// lire le Namespace de l�ontologie
-			NS = model.getNsPrefixURI("");
+			/*NS = model.getNsPrefixURI("");
 
 			// apply our rules on the owlInferencedModel
 			Model inferedModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
@@ -152,7 +207,24 @@ public class RestApi {
 			// query on the model after inference
 			String res =  JenaEngine.executeQueryFile(inferedModel, "data/query_produits.txt");
 			System.out.println(res);
-			return res;
+			return res;*/
+			
+			String queryString = new String(Files.readAllBytes(Paths.get("data/query_produits.txt")));
+	        
+	        Query query = QueryFactory.create(queryString) ;
+	        Model inferedModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
+	        QueryExecution qexec = QueryExecutionFactory.create(query, inferedModel) ;
+	        
+	            ResultSet results = qexec.execSelect() ;
+	            ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+
+	            ResultSetFormatter.outputAsJSON(outputStream, results);
+
+	            // and turn that into a String
+	            String json = new String(outputStream.toByteArray());
+
+	            System.out.println(json);
+	            return json;
 			
 
 		} else {
@@ -162,12 +234,12 @@ public class RestApi {
 	
 	@GetMapping("/soins")
 	@CrossOrigin(origins = "http://localhost:3000")
-	public String afficherSoin() {
+	public String afficherSoin() throws IOException {
 		String NS = "";
 		// lire le model a partir d'une ontologie
 		if (model != null) {
 			// lire le Namespace de l�ontologie
-			NS = model.getNsPrefixURI("");
+			/*NS = model.getNsPrefixURI("");
 
 			// apply our rules on the owlInferencedModel
 			Model inferedModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
@@ -175,7 +247,24 @@ public class RestApi {
 			// query on the model after inference
 			String res =  JenaEngine.executeQueryFile(inferedModel, "data/query_soin.txt");
 			System.out.println(res);
-			return res;
+			return res;*/
+			
+			String queryString = new String(Files.readAllBytes(Paths.get("data/query_soin.txt")));
+	        
+	        Query query = QueryFactory.create(queryString) ;
+	        Model inferedModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
+	        QueryExecution qexec = QueryExecutionFactory.create(query, inferedModel) ;
+	        
+	            ResultSet results = qexec.execSelect() ;
+	            ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+
+	            ResultSetFormatter.outputAsJSON(outputStream, results);
+
+	            // and turn that into a String
+	            String json = new String(outputStream.toByteArray());
+
+	            System.out.println(json);
+	            return json;
 			
 
 		} else {
@@ -186,12 +275,12 @@ public class RestApi {
 	
 	@GetMapping("/capillaires")
 	@CrossOrigin(origins = "http://localhost:3000")
-	public String afficherCap() {
+	public String afficherCap() throws IOException {
 		String NS = "";
 		// lire le model a partir d'une ontologie
 		if (model != null) {
 			// lire le Namespace de l�ontologie
-			NS = model.getNsPrefixURI("");
+			/*NS = model.getNsPrefixURI("");
 
 			// apply our rules on the owlInferencedModel
 			Model inferedModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
@@ -199,7 +288,25 @@ public class RestApi {
 			// query on the model after inference
 			String res =  JenaEngine.executeQueryFile(inferedModel, "data/query_capillaire.txt");
 			System.out.println(res);
-			return res;
+			return res;*/
+			
+			
+			String queryString = new String(Files.readAllBytes(Paths.get("data/query_capillaire.txt")));
+	        
+	        Query query = QueryFactory.create(queryString) ;
+	        Model inferedModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
+	        QueryExecution qexec = QueryExecutionFactory.create(query, inferedModel) ;
+	        
+	            ResultSet results = qexec.execSelect() ;
+	            ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+
+	            ResultSetFormatter.outputAsJSON(outputStream, results);
+
+	            // and turn that into a String
+	            String json = new String(outputStream.toByteArray());
+
+	            System.out.println(json);
+	            return json;
 			
 
 		} else {
@@ -210,12 +317,12 @@ public class RestApi {
 	
 	@GetMapping("/maquillages")
 	@CrossOrigin(origins = "http://localhost:3000")
-	public String afficherMake() {
+	public String afficherMake() throws IOException {
 		String NS = "";
 		// lire le model a partir d'une ontologie
 		if (model != null) {
 			// lire le Namespace de l�ontologie
-			NS = model.getNsPrefixURI("");
+			/*NS = model.getNsPrefixURI("");
 
 			// apply our rules on the owlInferencedModel
 			Model inferedModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
@@ -224,7 +331,24 @@ public class RestApi {
 			String res =  JenaEngine.executeQueryFile(inferedModel, "data/query_maquillage.txt");
 			System.out.println(res);
 			return res;
+			*/
 			
+			
+			String queryString = new String(Files.readAllBytes(Paths.get("data/query_maquillage.txt"))); 
+	        Query query = QueryFactory.create(queryString) ;
+	        Model inferedModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
+	        QueryExecution qexec = QueryExecutionFactory.create(query, inferedModel) ;
+	        
+	            ResultSet results = qexec.execSelect() ;
+	            ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+
+	            ResultSetFormatter.outputAsJSON(outputStream, results);
+
+	            // and turn that into a String
+	            String json = new String(outputStream.toByteArray());
+
+	            System.out.println(json);
+	            return json;
 
 		} else {
 			return ("Error when reading model from ontology");
@@ -235,12 +359,12 @@ public class RestApi {
 	
 	@GetMapping("/visages")
 	@CrossOrigin(origins = "http://localhost:3000")
-	public String afficherVisa() {
+	public String afficherVisa() throws IOException {
 		String NS = "";
 		// lire le model a partir d'une ontologie
 		if (model != null) {
 			// lire le Namespace de l�ontologie
-			NS = model.getNsPrefixURI("");
+			/*NS = model.getNsPrefixURI("");
 
 			// apply our rules on the owlInferencedModel
 			Model inferedModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
@@ -249,7 +373,25 @@ public class RestApi {
 			String res =  JenaEngine.executeQueryFile(inferedModel, "data/query_visage.txt");
 			System.out.println(res);
 			return res;
+			*/
 			
+			
+			String queryString = new String(Files.readAllBytes(Paths.get("data/query_visage.txt"))); 
+	        Query query = QueryFactory.create(queryString) ;
+	        Model inferedModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
+	        QueryExecution qexec = QueryExecutionFactory.create(query, inferedModel) ;
+	        
+	            ResultSet results = qexec.execSelect() ;
+	            ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+
+	            ResultSetFormatter.outputAsJSON(outputStream, results);
+
+	            // and turn that into a String
+	            String json = new String(outputStream.toByteArray());
+
+	            System.out.println(json);
+	            return json;
+
 
 		} else {
 			return ("Error when reading model from ontology");
@@ -259,12 +401,12 @@ public class RestApi {
 	
 	@GetMapping("/corps")
 	@CrossOrigin(origins = "http://localhost:3000")
-	public String afficherCorp() {
+	public String afficherCorp() throws IOException {
 		String NS = "";
 		// lire le model a partir d'une ontologie
 		if (model != null) {
 			// lire le Namespace de l�ontologie
-			NS = model.getNsPrefixURI("");
+			/*NS = model.getNsPrefixURI("");
 
 			// apply our rules on the owlInferencedModel
 			Model inferedModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
@@ -272,7 +414,26 @@ public class RestApi {
 			// query on the model after inference
 			String res =  JenaEngine.executeQueryFile(inferedModel, "data/query_corp.txt");
 			System.out.println(res);
-			return res;
+			return res;*/
+			
+			
+			String queryString = new String(Files.readAllBytes(Paths.get("data/query_corp.txt"))); 
+	        Query query = QueryFactory.create(queryString) ;
+	        Model inferedModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
+	        QueryExecution qexec = QueryExecutionFactory.create(query, inferedModel) ;
+	        
+	            ResultSet results = qexec.execSelect() ;
+	            ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+
+	            ResultSetFormatter.outputAsJSON(outputStream, results);
+
+	            // and turn that into a String
+	            String json = new String(outputStream.toByteArray());
+
+	            System.out.println(json);
+	            return json;
+			
+			
 			
 
 		} else {
@@ -282,12 +443,12 @@ public class RestApi {
 	
 	@GetMapping("/skincares")
 	@CrossOrigin(origins = "http://localhost:3000")
-	public String afficherSkin() {
+	public String afficherSkin() throws IOException {
 		String NS = "";
 		// lire le model a partir d'une ontologie
 		if (model != null) {
 			// lire le Namespace de l�ontologie
-			NS = model.getNsPrefixURI("");
+			/*NS = model.getNsPrefixURI("");
 
 			// apply our rules on the owlInferencedModel
 			Model inferedModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
@@ -295,7 +456,69 @@ public class RestApi {
 			// query on the model after inference
 			String res =  JenaEngine.executeQueryFile(inferedModel, "data/query_skincare.txt");
 			System.out.println(res);
-			return res;
+			return res;*/
+			
+			
+			String queryString = new String(Files.readAllBytes(Paths.get("data/query_skincare.txt"))); 
+	        Query query = QueryFactory.create(queryString) ;
+	        Model inferedModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
+	        QueryExecution qexec = QueryExecutionFactory.create(query, inferedModel) ;
+	        
+	            ResultSet results = qexec.execSelect() ;
+	            ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+
+	            ResultSetFormatter.outputAsJSON(outputStream, results);
+
+	            // and turn that into a String
+	            String json = new String(outputStream.toByteArray());
+
+	            System.out.println(json);
+	            return json;
+			
+			
+
+		} else {
+			return ("Error when reading model from ontology");
+		}
+	}
+	
+	
+	
+	
+	@GetMapping("/parfums")
+	@CrossOrigin(origins = "http://localhost:3000")
+	public String afficherParfum() throws IOException {
+		String NS = "";
+		// lire le model a partir d'une ontologie
+		if (model != null) {
+			// lire le Namespace de l�ontologie
+			/*NS = model.getNsPrefixURI("");
+
+			// apply our rules on the owlInferencedModel
+			Model inferedModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
+
+			// query on the model after inference
+			String res =  JenaEngine.executeQueryFile(inferedModel, "data/query_skincare.txt");
+			System.out.println(res);
+			return res;*/
+			
+			
+			String queryString = new String(Files.readAllBytes(Paths.get("data/parfum_query.txt"))); 
+	        Query query = QueryFactory.create(queryString) ;
+	        Model inferedModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
+	        QueryExecution qexec = QueryExecutionFactory.create(query, inferedModel) ;
+	        
+	            ResultSet results = qexec.execSelect() ;
+	            ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+
+	            ResultSetFormatter.outputAsJSON(outputStream, results);
+
+	            // and turn that into a String
+	            String json = new String(outputStream.toByteArray());
+
+	            System.out.println(json);
+	            return json;
+			
 			
 
 		} else {
