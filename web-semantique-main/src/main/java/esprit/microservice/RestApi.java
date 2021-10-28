@@ -1,6 +1,18 @@
 package esprit.microservice;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+import org.apache.jena.query.Query;
+import org.apache.jena.query.QueryExecution;
+import org.apache.jena.query.QueryExecutionFactory;
+import org.apache.jena.query.QueryFactory;
+import org.apache.jena.query.ResultSet;
+import org.apache.jena.query.ResultSetFormatter;
 import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,21 +25,42 @@ public class RestApi {
 
 	@GetMapping("/employee")
 	@CrossOrigin(origins = "http://localhost:3000")
-	public String afficherEmp() {
+	public String afficherEmp() throws IOException {
 		String NS = "";
 		// lire le model a partir d'une ontologie
 		if (model != null) {
 			// lire le Namespace de l�ontologie
-			NS = model.getNsPrefixURI("");
+			/*NS = model.getNsPrefixURI("");
 
 			// apply our rules on the owlInferencedModel
-			Model inferedModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
+			
 
 			// query on the model after inference
 			String res =  JenaEngine.executeQueryFile(inferedModel, "data/employee_query.txt");
-			System.out.println(res);
-			return res;
-			
+			System.out.println(res);*/
+			//return res;
+			//Model model = ModelFactory.createDefaultModel() ;
+			 
+	                
+	 
+	        
+	        
+	        String queryString = new String(Files.readAllBytes(Paths.get("data/employee_query.txt")));
+	        
+	        Query query = QueryFactory.create(queryString) ;
+	        Model inferedModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
+	        QueryExecution qexec = QueryExecutionFactory.create(query, inferedModel) ;
+	        
+	            ResultSet results = qexec.execSelect() ;
+	            ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+
+	            ResultSetFormatter.outputAsJSON(outputStream, results);
+
+	            // and turn that into a String
+	            String json = new String(outputStream.toByteArray());
+
+	            System.out.println(json);
+	            return json;
 
 		} else {
 			return ("Error when reading model from ontology");
